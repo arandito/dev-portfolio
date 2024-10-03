@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 const Links = () => {
   return (
     <Card className='flex flex-col gap-4 w-full p-6 mb-2'>
-      <div className='text-2xl text-blue-700 dark:text-blue-600'>links</div>
+      <div className='text-2xl font-bold text-blue-700 dark:text-blue-600'>links</div>
       <div className="flex flex-col sm:flex-row text-lg gap-8">
         <a href="mailto:me@antonioaranda.dev" target="_blank" className="flex flex-row items-center mr-2 hover:text-blue-500 dark:hover:text-blue-300">
           <Icons.mail className="h-6 w-6 mr-2" />

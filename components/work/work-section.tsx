@@ -50,7 +50,7 @@ const works: WorkProps[] = [
 const WorkSection = () => {
   return (
     <Card className='flex flex-col gap-4 w-full sm:w-1/2 my-10 pt-6 pb-2 px-6'>
-      <div className='text-2xl text-blue-700 dark:text-blue-600'>work</div>
+      <div className='text-2xl font-bold text-blue-700 dark:text-blue-600'>work</div>
       <div className='flex flex-col'>
         {works.map((work) => (
           <Work key={work.company} {...work} />
