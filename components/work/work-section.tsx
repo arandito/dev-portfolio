@@ -49,8 +49,10 @@ const works: WorkProps[] = [
 
 const WorkSection = () => {
   return (
-    <Card className='flex flex-col gap-4 w-full sm:w-1/2 my-10 pt-6 pb-2 px-6'>
-      <div className='text-2xl font-bold text-blue-700 dark:text-blue-600'>work</div>
+    <Card className='flex flex-col gap-4 w-full sm:w-1/2 mt-4 mb-10 pt-6 pb-2 px-6'>
+      <div>
+        <span className='text-2xl font-bold bg-gradient-to-r bg-clip-text text-transparent from-blue-700 to-sky-500'>work</span>
+      </div>
       <div className='flex flex-col'>
         {works.map((work) => (
           <Work key={work.company} {...work} />
