@@ -5,7 +5,6 @@ import Footer from '@/components/footer';
 import Header from '@/components/header'
 import Info from '@/components/info';
 import Links from '@/components/links';
-import Logos from '@/components/logos';
 import ProjectSection from '@/components/project/project-section';
 import WorkSection from '@/components/work/work-section';
 
@@ -21,7 +20,6 @@ export default function Home() {
         </div>
         <Info />
         <Bio />
-        <Logos />
         <div className='flex flex-col sm:flex-row md:justify-between leading-6 gap-6'>
           <WorkSection />
           <ProjectSection />
