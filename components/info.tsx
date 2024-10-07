@@ -1,19 +1,19 @@
-import { MapPin, Briefcase, GraduationCap } from "lucide-react"
+import { MapPin, Laptop, GraduationCap } from "lucide-react"
 
 const Info = () => {
-  return(
-    <div className="flex flex-col py-2 gap-2 mt-8">
-      <div className="flex flex-row items-center text-xl">
-        <MapPin className="h-6 w-6 mr-2" />
+  return (
+    <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 pt-8 pb-2">
+      <div className="flex flex-row items-center">
+        <MapPin className="h-5 w-5 mr-2" />
         new york city
       </div>
-      <div className="flex flex-row items-center text-xl">
-        <Briefcase className="h-6 w-6 mr-2" />
-        ex-sde intern @ aws
+      <div className="flex flex-row items-center">
+        <Laptop className="h-5 w-5 mr-2" />
+        sde intern @ aws
       </div>
-      <div className="flex flex-row items-center text-xl">
-        <GraduationCap className="h-6 w-6 mr-2" />
-        b.a. in cs @ columbia 
+      <div className="flex flex-row items-center">
+        <GraduationCap className="h-5 w-5 mr-2" />
+        cs @ columbia
       </div>
     </div>
   )

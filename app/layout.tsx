@@ -8,8 +8,8 @@ const interLocal = localFont({
 });
 
 export const metadata = {
-  title: 'antonio aranda',
-  description: 'Developer porfolio',
+  title: 'Antonio Aranda',
+  description: "Antonio Aranda's developer porfolio",
   icons: {
     icon: '/favicon.ico',
   },

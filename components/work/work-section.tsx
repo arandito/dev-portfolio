@@ -1,5 +1,5 @@
 import Work from "@/components/work/work";
-import { Card } from "@/components/ui/card";
+import Link from "next/link";
 
 interface WorkProps {
   company: string;
@@ -11,54 +11,50 @@ interface WorkProps {
 
 const works: WorkProps[] = [
   {
-    company:'amazon web services',
-    position:'sde intern',
-    link:'https://aws.amazon.com/sdk-for-python',
-    date:'(jun 2024 - aug 2024)',
-    description:'built an automation tool for paginator model generation and integrated it into the botocore ci/cd pipeline',
+    company: 'amazon web services',
+    position: 'sde intern',
+    link: 'https://aws.amazon.com/sdk-for-python',
+    date: '(jun 2024 - aug 2024)',
+    description: 'built an automation tool for paginator model generation and integrated it into the botocore ci/cd pipeline',
   },
   {
-    company:'amazon alexa',
-    position:'sde intern',
-    link:'https://alexa.amazon.com',
-    date:'(may 2023 - aug 2023)',
-    description:'developed a text phrase generator and validator microservice for voice authentication on alexa devices',
+    company: 'amazon alexa',
+    position: 'sde intern',
+    link: 'https://alexa.amazon.com',
+    date: '(may 2023 - aug 2023)',
+    description: 'developed a text phrase generator and validator microservice for voice authentication on alexa devices',
   },
   {
     company: 'accessible and accelerated robotics lab',
-    position:'researcher',
-    link:'https://a2r-lab.org',
-    date:'(sep 2022 - may 2023)',
-    description:'optimized robotic motion planning algorithms by 3-4x using parallel cuda c++ and nvidia gpus',
+    position: 'researcher',
+    link: 'https://a2r-lab.org',
+    date: '(sep 2022 - may 2023)',
+    description: 'optimized robotic motion planning algorithms by 3-4x using parallel cuda c++ and nvidia gpus',
   },
   {
     company: 'columbia university',
-    position:'course assistant',
-    link:'https://bulletin.columbia.edu/columbia-college/departments-instruction/computer-science/',
-    date:'(aug 2022 - dec 2022)',
-    description:'assisted professor brian borowski in teaching coms 3134 data structures in java for over 400 students',
-  },
-  {
-    company: 'view resume →',
-    position:'',
-    link:'/docs/resume.pdf',
-    date:'',
-    description:'',
+    position: 'course assistant',
+    link: 'https://bulletin.columbia.edu/columbia-college/departments-instruction/computer-science/',
+    date: '(aug 2022 - dec 2022)',
+    description: 'assisted professor brian borowski in teaching coms 3134 data structures in java for over 400 students',
   },
 ];
 
 const WorkSection = () => {
   return (
-    <Card className='flex flex-col gap-4 w-full sm:w-1/2 mt-4 mb-10 pt-6 pb-2 px-6'>
+    <div className='flex flex-col gap-4 w-full sm:w-1/2 pr-6 pb-5 sm:pb-0'>
       <div>
-        <span className='text-2xl font-bold bg-gradient-to-r bg-clip-text text-transparent from-blue-700 to-sky-500'>work</span>
+        <span className='text-xl font-semibold'>work</span>
       </div>
       <div className='flex flex-col'>
         {works.map((work) => (
           <Work key={work.company} {...work} />
         ))}
+      <div className='flex flex-col'>
+        <Link href={"/docs/resume.pdf"} className='font-medium underline underline-offset-4 decoration-wavy decoration-zinc-400 hover:text-zinc-400 dark:decoration-zinc-400 dark:hover:text-zinc-400 dark:hover:text-foreground'>view resume →</Link>
       </div>
-    </Card>
+      </div>
+    </div>
   )
 }
 

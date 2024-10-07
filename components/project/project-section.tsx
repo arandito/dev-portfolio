@@ -1,5 +1,5 @@
 import Project from "@/components/project/project";
-import { Card } from "@/components/ui/card";
+import Link from "next/link";
 
 interface ProjectProps {
   name: string;
@@ -37,19 +37,13 @@ const projects: ProjectProps[] = [
     description:
       "expansion of wordle game with unlimited retries, multiple languages, and varying difficulties",
   },
-  {
-    name: "all projects →",
-    link: "https://github.com/arandito",
-    date: "",
-    description: "",
-  },
 ];
 
 const ProjectSection = () => {
   return (
-    <Card className='flex flex-col gap-4 w-full sm:w-1/2 mb-10 sm:mt-4 pt-6 pb-2 px-6'>
+    <div className='flex flex-col gap-4 w-full sm:w-1/2 pr-6 pb-1 sm:pb-0'>
       <div>
-        <span className='text-2xl font-bold bg-gradient-to-r bg-clip-text text-transparent from-blue-700 to-sky-500'>
+        <span className='text-xl font-semibold'>
           projects
         </span>
       </div>
@@ -57,8 +51,11 @@ const ProjectSection = () => {
         {projects.map((project) => (
           <Project key={project.name} {...project} />
         ))}
+        <div className='flex flex-col'>
+          <Link href={"https://github.com/arandito"} className='font-medium underline underline-offset-4 decoration-wavy decoration-zinc-400 hover:text-zinc-400 dark:decoration-zinc-400 dark:hover:text-zinc-400 dark:hover:text-foreground'>all projects →</Link>
+        </div>
       </div>
-    </Card>
+    </div>
   )
 }
 
