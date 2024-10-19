@@ -30,13 +30,6 @@ const projects: ProjectProps[] = [
     description:
       "automated twitter bot that posts air quality alerts for the 75 most populous cities in the us",
   },
-  {
-    name: "international-wordle",
-    link: "https://wordle.antonioaranda.dev/",
-    date: "aug 2022",
-    description:
-      "expansion of wordle game with unlimited retries, multiple languages, and varying difficulties",
-  },
 ];
 
 const ProjectSection = () => {

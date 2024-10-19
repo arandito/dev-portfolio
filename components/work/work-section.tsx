@@ -25,18 +25,11 @@ const works: WorkProps[] = [
     description: 'developed a text phrase generator and validator microservice for voice authentication on alexa devices',
   },
   {
-    company: 'accessible and accelerated robotics lab',
+    company: 'a² robotics lab',
     position: 'researcher',
     link: 'https://a2r-lab.org',
     date: '(sep 2022 - may 2023)',
     description: 'optimized robotic motion planning algorithms by 3-4x using parallel cuda c++ and nvidia gpus',
-  },
-  {
-    company: 'columbia university',
-    position: 'course assistant',
-    link: 'https://bulletin.columbia.edu/columbia-college/departments-instruction/computer-science/',
-    date: '(aug 2022 - dec 2022)',
-    description: 'assisted professor brian borowski in teaching coms 3134 data structures in java for over 400 students',
   },
 ];
 

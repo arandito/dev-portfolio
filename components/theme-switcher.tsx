@@ -42,21 +42,21 @@ export const ThemeSwitcher = () => {
       <DropdownMenuContent align="end">
         <DropdownMenuItem 
           onClick={() => setTheme("light")}
-          className={theme === "light" ? "text-zinc-400" : ""}
+          className={theme != "light" ? "text-zinc-400 dark:text-zinc-500" : ""}
         >
           <Sun className="mr-2 h-4 w-4" />
           <span>Light</span>
         </DropdownMenuItem>
         <DropdownMenuItem 
           onClick={() => setTheme("dark")}
-          className={theme === "dark" ? "text-zinc-500" : ""}
+          className={theme != "dark" ? "text-zinc-400 dark:text-zinc-500" : ""}
         >
           <MoonStar className="mr-2 h-4 w-4" />
           <span>Dark</span>
         </DropdownMenuItem>
         <DropdownMenuItem 
           onClick={() => setTheme("system")}
-          className={theme === "system" ? "text-zinc-500" : ""}
+          className={theme != "system" ? "text-zinc-400 dark:text-zinc-500" : ""}
         >
           <Laptop className="mr-2 h-4 w-4" />
           <span>System</span>
