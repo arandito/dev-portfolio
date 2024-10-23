@@ -10,7 +10,7 @@ const Links = () => {
         </span>
       </div>
       <div className="flex flex-col sm:flex-row gap-8">
-        <a href="mailto:me@antonioaranda.dev" target="_blank" className="flex flex-row items-center mr-2 hover:text-zinc-400 dark:hover:text-zinc-400">
+        <a href="mailto:aranda-dev@proton.me" target="_blank" className="flex flex-row items-center mr-2 hover:text-zinc-400 dark:hover:text-zinc-400">
           <Icons.mail className="h-5 w-5 mr-2" />
           email
         </a>
