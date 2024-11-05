@@ -9,7 +9,7 @@ const Info = () => {
       </div>
       <div className="flex flex-row items-center">
         <Laptop className="h-5 w-5 mr-2" />
-        sde intern @ aws
+        incoming sde @ aws
       </div>
       <div className="flex flex-row items-center">
         <GraduationCap className="h-5 w-5 mr-2" />
