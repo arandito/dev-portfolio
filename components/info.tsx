@@ -11,10 +11,10 @@ const Info = () => {
         <Laptop className="h-5 w-5 mr-2" />
         engineering @ aws
       </div>
-      <div className="flex flex-row items-center">
+      {/* <div className="flex flex-row items-center">
         <GraduationCap className="h-5 w-5 mr-2" />
         cs @ columbia
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -12,21 +12,21 @@ interface WorkProps {
 const works: WorkProps[] = [
   {
     company: 'amazon web services',
-    position: 'incoming sde',
+    position: 'incoming swe',
     link: 'https://aws.amazon.com/sdk-for-python',
     date: '(feb 2025)',
-    description: 'joining the aws sdks and tools org',
+    description: 'returning to aws sdk and tools',
   },
   {
     company: 'amazon web services',
-    position: 'sde intern',
+    position: 'swe intern',
     link: 'https://aws.amazon.com/sdk-for-python',
     date: '(jun 2024 - aug 2024)',
     description: 'built an automation tool for paginator model generation and integrated it into the botocore ci/cd pipeline',
   },
   {
     company: 'amazon alexa',
-    position: 'sde intern',
+    position: 'swe intern',
     link: 'https://alexa.amazon.com',
     date: '(may 2023 - aug 2023)',
     description: 'developed a text phrase generator and validator microservice for voice authentication on alexa devices',
