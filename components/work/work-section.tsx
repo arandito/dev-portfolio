@@ -11,47 +11,47 @@ interface WorkProps {
 
 const works: WorkProps[] = [
   {
-    company: 'amazon web services',
-    position: 'incoming swe',
+    company: 'Amazon Web Services',
+    position: 'Incoming SWE',
     link: 'https://aws.amazon.com/sdk-for-python',
-    date: '(feb 2025)',
-    description: 'returning to aws sdk and tools',
+    date: 'Feb 2025',
+    description: 'Returning to AWS SDK and Tools',
   },
   {
-    company: 'amazon web services',
-    position: 'swe intern',
+    company: 'Amazon Web Services',
+    position: 'SWE Intern',
     link: 'https://aws.amazon.com/sdk-for-python',
-    date: '(jun 2024 - aug 2024)',
-    description: 'built an automation tool for paginator model generation and integrated it into the botocore ci/cd pipeline',
+    date: 'Jun 2024 - Aug 2024',
+    description: 'Built an automation tool for paginator model generation and integrated it into the Botocore CI/CD pipeline',
   },
   {
-    company: 'amazon alexa',
-    position: 'swe intern',
+    company: 'Amazon Alexa',
+    position: 'SWE Intern',
     link: 'https://alexa.amazon.com',
-    date: '(may 2023 - aug 2023)',
-    description: 'developed a text phrase generator and validator microservice for voice authentication on alexa devices',
+    date: 'May 2023 - Aug 2023',
+    description: 'Deployed a phrase generator microservice for user voice authentication on Alexa devices',
   },
   {
-    company: 'a² robotics lab',
-    position: 'researcher',
+    company: 'A² Robotics Lab',
+    position: 'Researcher',
     link: 'https://a2r-lab.org',
-    date: '(sep 2022 - may 2023)',
-    description: 'optimized robotic motion planning algorithms by 3-4x using parallel cuda c++ and nvidia gpus',
+    date: 'Sep 2022 - May 2023',
+    description: 'Optimized robotic motion planning algorithms using parallel CUDA C++ and NVIDIA GPUs',
   },
 ];
 
 const WorkSection = () => {
   return (
-    <div className='flex flex-col gap-4 w-full sm:w-1/2 pr-6 pb-5 sm:pb-0'>
-      <div>
-        <span className='text-xl font-semibold'>work</span>
+    <div className='flex flex-col gap-4 w-1/2 pr-6'>
+      <div className='text-xl pb-2'>
+        work
       </div>
       <div className='flex flex-col'>
         {works.map((work) => (
           <Work key={work.company} {...work} />
         ))}
       <div className='flex flex-col'>
-        <Link href={"/docs/resume.pdf"} className='font-medium underline underline-offset-4 decoration-wavy decoration-zinc-400 hover:text-zinc-400 dark:decoration-zinc-400 dark:hover:text-zinc-400 dark:hover:text-foreground'>view resume →</Link>
+        <Link href={"/docs/resume.pdf"} className='font-medium underline underline-offset-4 decoration-1 decoration-muted-foreground hover:text-muted-foreground'>view resume →</Link>
       </div>
       </div>
     </div>

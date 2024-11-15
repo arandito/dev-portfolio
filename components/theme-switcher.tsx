@@ -20,7 +20,7 @@ export const ThemeSwitcher = () => {
   if (!mounted) {
     return (
       <button className="p-2 focus:outline-none">
-        <div className="w-6 h-6" />
+        <div className="w-4 h-4" />
       </button>
     );
   }
@@ -32,34 +32,34 @@ export const ThemeSwitcher = () => {
       <DropdownMenuTrigger asChild>
         <button className="p-2 focus:outline-none">
           {currentTheme === 'dark' ? (
-            <MoonStar className="h-5 w-5 hover:text-zinc-500" />
+            <MoonStar className="h-4 w-4 text-muted-foreground hover:text-foreground" />
           ) : (
-            <Sun className="h-5 w-5 hover:text-zinc-400" />
+            <Sun className="h-4 w-4 text-muted-foreground hover:text-foreground" />
           )}
           <span className="sr-only">Toggle theme</span>
         </button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" className='font-local'>
         <DropdownMenuItem 
           onClick={() => setTheme("light")}
           className={theme != "light" ? "text-zinc-400 dark:text-zinc-500" : ""}
         >
           <Sun className="mr-2 h-4 w-4" />
-          <span>Light</span>
+          <span className='font-local'>Light</span>
         </DropdownMenuItem>
         <DropdownMenuItem 
           onClick={() => setTheme("dark")}
           className={theme != "dark" ? "text-zinc-400 dark:text-zinc-500" : ""}
         >
           <MoonStar className="mr-2 h-4 w-4" />
-          <span>Dark</span>
+          <span className='font-local'>Dark</span>
         </DropdownMenuItem>
         <DropdownMenuItem 
           onClick={() => setTheme("system")}
           className={theme != "system" ? "text-zinc-400 dark:text-zinc-500" : ""}
         >
           <Laptop className="mr-2 h-4 w-4" />
-          <span>System</span>
+          <span className='font-local'>System</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

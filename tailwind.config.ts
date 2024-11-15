@@ -11,11 +11,7 @@ const config: Config = {
   	extend: {
 			fontFamily: {
         local: [
-          "var(--font-inter-local)",
-          {
-            fontFeatureSettings: '"cv11"',
-            fontVariationSettings: "normal",
-          },
+          "var(--font-noveo-local)",
         ],
       },
   		colors: {

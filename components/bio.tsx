@@ -1,9 +1,20 @@
+import Link from "next/link";
+
 const Bio = () => {
   return (
-    <div className='flex flex-col pt-2 gap-2 leading-8'>
-      hey! i&apos;m a recent grad from columbia and an incoming swe @ aws. i enjoy creating web apps,
-      learning about new tech, and programming my way through life. if i&apos;m not coding, 
-      i&apos;m probably playing soccer, exploring restaurants, or obsessing over coffee beans.
+    <div className='flex flex-col py-8 text-muted-foreground text-lg gap-5 w-3/4'>
+      <div className='leading-6'>
+        Software engineer based in NYC and recent CS grad from Columbia University.
+      </div>
+      <div className='leading-6'>
+        Currently, I&apos;m an <span className='text-foreground'>incoming software engineer at AWS</span>.
+      </div>
+      <div className='leading-6'>
+        Previously, I was a software engineer intern at <span className='text-foreground'>Amazon Alexa</span> and a robotics researcher at <span className='text-foreground'>A²R lab</span>.
+      </div>
+      <div className='leading-6'>
+        Check out some of my <Link href="/projects" className='text-foreground underline underline-offset-4 decoration-muted-foreground decoration-1 hover:text-muted-foreground'>projects</Link> and past <Link href="/work" className='text-foreground underline underline-offset-4 decoration-muted-foreground decoration-1 hover:text-muted-foreground'>work</Link>.
+      </div>
     </div>
   )
 }
