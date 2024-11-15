@@ -10,7 +10,7 @@ const BackArrow = ({ className = '' }) => {
       onClick={() => router.back()}
       className={`group flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors ${className}`}
     >
-      <span className="text-base font-medium ">← home</span>
+      <span className="text-base font-medium">← home</span>
     </button>
   );
 };

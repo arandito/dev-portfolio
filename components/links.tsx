@@ -4,7 +4,7 @@ import Link from "next/link";
 const Links = () => {
   return (
     <div className='flex flex-col gap-4 w-full'>
-      <div className="flex flex-col sm:flex-row gap-8">
+      <div className="flex flex-col sm:flex-row gap-4">
         <a 
           href="mailto:aranda-dev@proton.me" 
           target="_blank" 
