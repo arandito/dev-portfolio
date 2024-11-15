@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Bio = () => {
   return (
-    <div className='flex flex-col py-8 text-muted-foreground text-lg gap-5 w-3/4'>
+    <div className='flex flex-col py-8 text-muted-foreground text-lg gap-5 max-w-[30rem]'>
       <div className='leading-6'>
         Software engineer based in NYC and recent CS grad from Columbia University.
       </div>

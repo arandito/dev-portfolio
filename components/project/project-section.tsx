@@ -41,7 +41,7 @@ const projects: ProjectProps[] = [
 
 const ProjectSection = () => {
   return (
-    <div className='flex flex-col gap-4 w-1/2 pr-6'>
+    <div className='flex flex-col gap-4 w-full sm:w-1/2 pr-6'>
       <div className='text-xl pb-2'>
         projects
       </div>
