@@ -11,14 +11,14 @@ interface ProjectProps {
 const projects: ProjectProps[] = [
   {
     name: "foodie-radar",
-    link: "https://foodieradar.antonioaranda.dev",
+    link: "https://foodie.antoara.com",
     date: "Sep 2024",
     description:
       "Web app that recommends restaurants based on user cravings and location",
   },
   {
     name: "travel-buds",
-    link: "https://github.com/aarandaa/travel-buds",
+    link: "https://github.com/arandito/travel-buds",
     date: "Jan 2024",
     description:
       "iOS chat app that matches travelers by destination, interests, and trip dates",
@@ -32,7 +32,7 @@ const projects: ProjectProps[] = [
   },
   {
     name: "international-wordle",
-    link: "https://wordle.antonioaranda.dev",
+    link: "https://wordle.antoara.com",
     date: "Sep 2022",
     description:
       "Wordle clone with multiple languages and unlimited retries",

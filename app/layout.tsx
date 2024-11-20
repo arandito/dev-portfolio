@@ -10,7 +10,19 @@ const noveoLocal = localFont({
 
 export const metadata = {
   title: 'Antonio Aranda',
-  description: "Antonio's developer porfolio",
+  description: "Antonio Aranda's developer porfolio",
+  icons: {
+    icon: [
+      { 
+        url: '/favicon-light.ico', 
+        media: '(prefers-color-scheme: light)' 
+      },
+      { 
+        url: '/favicon-dark.ico', 
+        media: '(prefers-color-scheme: dark)' 
+      }
+    ]
+  },
 };
 
 export default function RootLayout({
