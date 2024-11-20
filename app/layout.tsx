@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'next-themes';
 import './globals.css';
 import localFont from 'next/font/local';
+import DynamicFavicon from '@/components/dynamic-favicon';
 
 const noveoLocal = localFont({
   src: '/fonts/NoveoSans-Book.ttf',
@@ -10,9 +11,6 @@ const noveoLocal = localFont({
 export const metadata = {
   title: 'Antonio Aranda',
   description: "Antonio's developer porfolio",
-  icons: {
-    icon: '/favicon.ico',
-  },
 };
 
 export default function RootLayout({
@@ -22,9 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${noveoLocal.variable} font-local`}>
-      <head />
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <DynamicFavicon />
           {children}
         </ThemeProvider>
       </body>

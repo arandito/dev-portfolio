@@ -2,7 +2,7 @@
 
 import Footer from '@/components/footer';
 import WorkSection from '@/components/work/work-section';
-import BackArrow from '@/components/backarrow'; 
+import BackArrow from '@/components/back-arrow'; 
 
 export default function Home() {
   return (
