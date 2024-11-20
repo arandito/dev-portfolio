@@ -32,7 +32,7 @@ const projects: ProjectProps[] = [
   },
   {
     name: "international-wordle",
-    link: "https://international-wordle.antonioaranda.dev",
+    link: "https://wordle.antonioaranda.dev",
     date: "Sep 2022",
     description:
       "Wordle clone with multiple languages and unlimited retries",
