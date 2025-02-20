@@ -7,7 +7,7 @@ const Bio = () => {
         Software engineer based in NYC and recent CS grad from Columbia University.
       </div>
       <div className='leading-6'>
-        Currently, I&apos;m an <span className='text-foreground'>incoming software engineer at AWS</span>.
+        Currently, I&apos;m a<span className='text-foreground'> software engineer at AWS</span>.
       </div>
       <div className='leading-6'>
         Previously, I was a software engineer intern at <span className='text-foreground'>Amazon Alexa</span> and a robotics researcher at <span className='text-foreground'>A²R lab</span>.

@@ -12,10 +12,10 @@ interface WorkProps {
 const works: WorkProps[] = [
   {
     company: 'Amazon Web Services',
-    position: 'Incoming SWE',
+    position: 'SWE',
     link: 'https://aws.amazon.com/sdk-for-python',
     date: 'Feb 2025',
-    description: 'Returning to AWS SDK and Tools',
+    description: 'Returning to AWS SDK for Python team',
   },
   {
     company: 'Amazon Web Services',
